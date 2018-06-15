@@ -74,7 +74,7 @@ library(dplyr)
 groupedData <- group_by(mergedData, Subject, Activity)
 average_Data <- summarise_each(groupedData, funs(mean))
 head(average_Data)
-write.table(average_Data, "/Users/HBJ/Documents/Coursera/Getting and Cleaning Data/assignment/meanData.txt", row.names = TRUE)
+write.table(average_Data, "/Users/HBJ/Documents/Coursera/Getting and Cleaning Data/assignment/meanData.txt", row.names = FALSE)
 
 
 
